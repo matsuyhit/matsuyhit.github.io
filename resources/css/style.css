@@ -1,6 +1,6 @@
 /*
 Orange color: #e67e22
-
+Blue color: #0066CC
 */
 
 ul li {
@@ -90,7 +90,7 @@ h3 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #e67e22;
+    background-color: #0066CC;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -114,7 +114,7 @@ h2:after {
 .icon-big {
     font-size: 350%;
     display: block;
-    color: #e67e22;
+    color: #0066CC;
     margin-bottom: 10px;
 }
 
@@ -122,7 +122,7 @@ h2:after {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #e67e22;
+    color: #0066CC;
     font-size: 120%;
     margin-right: 10px;
     
@@ -136,10 +136,10 @@ h2:after {
 
 a:link,
 a:visited {
-    color: #e67e22;
+    color: #0066CC;
     text-decoration: none;
     padding-bottom: 1px;
-    border-bottom: 1px solid #e67e22;
+    border-bottom: 1px solid #0066CC;
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
@@ -166,16 +166,16 @@ input[type=submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: #0066CC;
+    border: 1px solid #0066CC;
     color: #fff;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
+    border: 1px solid #0066CC;
+    color: #0066CC;
 }
 
 .btn:hover,
@@ -261,7 +261,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 2px solid #0066CC;
 }
 
 
@@ -393,11 +393,11 @@ header {
 }
 
 .works-step div {
-    color: #e67e22;
+    color: #0066CC;
     font-size: 150%;
     height: 54px;
     width: 54px;
-    border: 2px solid #e67e22;
+    border: 2px solid #0066CC;
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -513,7 +513,7 @@ cite img {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #e67e22;
+    color: #0066CC;
 }
 
 .plan-price span {
