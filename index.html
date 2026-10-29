@@ -1,214 +1,748 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        <title>Hitoshi MATSUYAMA</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="row">
-                    <ul class="main-nav js--main-nav">
-                        <li><a href="#features">Biography</a></li>
-                        <li><a href="#works">Research Interest</a></li>
-                        <li><a href="#cities">Publication</a></li>
-                        <li><a href="#plans">Education</a></li>
-                    </ul>
-                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-                </div>
-            </nav>
-            <div class="hero-text-box">
-                <h1>Hitoshi Matsuyama<br>ph.d.</h1>
-            </div>
-            
-        </header>
-        
-        <section class="section-features js--section-features" id="features">
-            <div class="row">
-                <h2>Biography</h2>
-                <p class="long-copy">
-                    Hitoshi Matsuyama / 松山 仁 received his degree of doctor of engineering at Nagoya University, Japan in Sept 2022. His research interest lies in HCI, Ubiquitous computing, Computer Vision, and Recommender Systems. He is currently working as a machine learning engineer at Recruit Co., Ltd. 
-                </p>
-            </div>   
-        </section>
-        
-        <section class="section-steps" id="works">
-            <div class="row">
-                <h2>Research Interest</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-2 steps-box">
-                    <img src="resources/img/score.png" alt="Research photo" class="app-screen js--wp-2">
-                </div>
-                <div class="col span-1-of-2 steps-box">
-                    <div class="works-step clearfix">
-                        <div>1</div>
-                        <p>HCI/Ubicomp Researches for Artistic Sports</p>
-                    </div>
-                    <div class="works-step clearfix">
-                        <div>2</div>
-                        <p>Recommender Systems</p>
-                    </div>
-                    <div class="works-step clearfix">
-                        <div>3</div>
-                        <p>Computer Vision Technologies for Action Quality Assessment</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="video-wrap">
-            <div class="movie">
-            <iframe width="711" height="400" src="https://www.youtube.com/embed/qhc8UQ62vmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            </div>
-            
-            <br>
-            <br>
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hitoshi Matsuyama — HCI × AI Researcher</title>
+  <meta name="description" content="Hitoshi Matsuyama (松山 仁), Ph.D. — HCI × AI researcher at SB Intuitions. Using data and AI to give structure to expert knowledge so people can understand it, check it, and act on it. UIST 2026, IUI 2023, IEEE Sensors Journal.">
+  <meta name="author" content="Hitoshi Matsuyama">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f2efe7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0e0c" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://matsuyhit.github.io/">
+  <link rel="alternate" hreflang="en" href="https://matsuyhit.github.io/?lang=en">
+  <link rel="alternate" hreflang="ja" href="https://matsuyhit.github.io/?lang=ja">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-            <div class="video-wrap">
-            <div class="movie">
-            <iframe width="711" height="400" src="https://www.youtube.com/embed/rR3oF2ZFfDM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://matsuyhit.github.io/">
+  <meta property="og:title" content="Hitoshi Matsuyama — HCI × AI Researcher">
+  <meta property="og:description" content="Using data and AI to give structure to expert knowledge — so people can understand it, check it, and act on it.">
+  <meta property="og:image" content="https://matsuyhit.github.io/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Resolve theme + language before first paint to avoid a flash. -->
+  <script>
+    (function () {
+      var d = document.documentElement, s = null;
+      try { s = window.localStorage; } catch (e) {}
+      var q = new URLSearchParams(location.search).get('lang');
+      var lang = q === 'ja' || q === 'en' ? q : (s && s.getItem('lang')) || ((navigator.language || '').toLowerCase().indexOf('ja') === 0 ? 'ja' : 'en');
+      d.setAttribute('data-lang', lang);
+      d.setAttribute('lang', lang);
+      var theme = s && s.getItem('theme');
+      if (theme === 'light' || theme === 'dark') d.setAttribute('data-theme', theme);
+      d.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="assets/js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hitoshi Matsuyama",
+    "alternateName": "松山 仁",
+    "honorificSuffix": "Ph.D.",
+    "url": "https://matsuyhit.github.io/",
+    "image": "https://matsuyhit.github.io/assets/img/portrait.webp",
+    "worksFor": { "@type": "Organization", "name": "SB Intuitions Corp." },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Nagoya University" },
+    "knowsAbout": ["Human-computer interaction", "Explainable AI", "Large language models", "Computer vision", "Ubiquitous computing"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=SUEZeiUAAAAJ",
+      "https://jp.linkedin.com/in/%E4%BB%81-%E6%9D%BE%E5%B1%B1-776982199/en"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16M6 14l6 6 6-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke-width="3"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4.5h4.5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24"><path d="M12 4 2 10l10 6 10-6-10-6Z"/><path d="M6 12.5V17c2 2 10 2 12 0v-4.5"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2.5 2.5 0 0 1 5 0v4M12 10v7"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3.5 2.5 20h19L12 3.5Z"/><path d="M12 10v4.5M12 17.2v.01"/></symbol>
+    <symbol id="i-graph" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="9" r="2.5"/><circle cx="9" cy="18" r="2.5"/><path d="M8.3 7 15.7 8.3M7 8.3l1.4 7.4M16.5 11 10.7 16.3"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main"><span lang="en">Skip to content</span><span lang="ja">本文へスキップ</span></a>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Hitoshi Matsuyama — top">
+        <span class="brand-mark" aria-hidden="true">HM</span>
+        <span class="brand-name"><span lang="en">Hitoshi Matsuyama</span><span lang="ja">松山 仁</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#work" data-nav="work"><span class="nav-num">01</span><span lang="en">Work</span><span lang="ja">研究事例</span></a></li>
+          <li><a href="#publications" data-nav="publications"><span class="nav-num">02</span><span lang="en">Publications</span><span lang="ja">業績</span></a></li>
+          <li><a href="#cv" data-nav="cv"><span class="nav-num">03</span><span lang="en">CV</span><span lang="ja">経歴</span></a></li>
+          <li><a href="#contact" data-nav="contact"><span class="nav-num">04</span><span lang="en">Contact</span><span lang="ja">連絡先</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <div class="seg lang-switch" role="group" aria-label="Language / 言語">
+          <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-set-lang="ja" aria-pressed="false" lang="ja-JP">日本語</button>
+        </div>
+        <button class="icon-btn" type="button" data-toggle-theme data-i18n-attr="aria-label" data-en-aria-label="Switch color theme" data-ja-aria-label="カラーテーマを切り替え" aria-label="Switch color theme">
+          <svg class="ico ico-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="ico ico-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label" data-en-aria-label="Open menu" data-ja-aria-label="メニューを開く" aria-label="Open menu">
+          <svg class="ico ico-open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="ico ico-close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+
+    <div class="mobile-menu" id="mobile-menu" data-menu hidden>
+      <ul>
+        <li><a href="#work"><span class="nav-num">01</span><span lang="en">Work</span><span lang="ja">研究事例</span></a></li>
+        <li><a href="#publications"><span class="nav-num">02</span><span lang="en">Publications</span><span lang="ja">業績</span></a></li>
+        <li><a href="#cv"><span class="nav-num">03</span><span lang="en">CV</span><span lang="ja">経歴</span></a></li>
+        <li><a href="#contact"><span class="nav-num">04</span><span lang="en">Contact</span><span lang="ja">連絡先</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="hero-copy">
+        <p class="eyebrow mono" data-reveal>
+          <span lang="en">HCI × AI Researcher — SB Intuitions</span>
+          <span lang="ja">HCI × AI 研究者 — SB Intuitions</span>
+        </p>
+
+        <h1 class="hero-name" id="hero-name" data-reveal>
+          <span lang="en"><span class="line">Hitoshi</span><span class="line"><em>Matsuyama</em></span></span>
+          <span lang="ja" class="ja-name"><span class="line">松山<span class="name-gap"></span>仁</span></span>
+        </h1>
+        <p class="hero-alt" aria-hidden="true">
+          <span lang="en" class="tate">松山 仁</span>
+          <span lang="ja" class="tate tate-latin">Hitoshi Matsuyama, Ph.D.</span>
+        </p>
+
+        <p class="lede" data-reveal lang="en">
+          I use data and AI to give structure to expert knowledge — so that people can <em>understand</em> it, <em>check</em> it, and <em>act</em> on it.
+        </p>
+        <p class="lede" data-reveal lang="ja">
+          専門家の知識をデータとAIで構造化し、人が<em>理解し</em>、<em>確かめ</em>、<em>活かせる</em>形にする。
+        </p>
+        <p class="lede-sub" data-reveal lang="en">Across HCI research and data science — from ballroom dance and figure-skating judging to LLM-assisted writing.</p>
+        <p class="lede-sub" data-reveal lang="ja">HCI研究とデータサイエンスの両面から — 社交ダンスやフィギュアスケートの採点から、LLMによる文章作成支援まで。</p>
+
+        <div class="hero-cta" data-reveal>
+          <a class="btn btn-primary" href="#work">
+            <span lang="en">Selected work</span><span lang="ja">研究事例を見る</span>
+            <svg class="ico" aria-hidden="true"><use href="#i-down"/></svg>
+          </a>
+          <a class="btn" href="#publications"><span lang="en">Publications</span><span lang="ja">業績一覧</span></a>
+        </div>
+
+        <a class="now-chip" href="#docudebug" data-reveal>
+          <span class="pulse" aria-hidden="true"></span>
+          <span class="mono now-label">NOW</span>
+          <span lang="en">Presenting <b>DocuDebug</b> at UIST 2026 · Detroit · Nov 3</span>
+          <span lang="ja"><b>DocuDebug</b> を UIST 2026 で発表 · デトロイト · 11月3日</span>
+          <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+
+      <figure class="hero-portrait" data-reveal>
+        <img src="assets/img/portrait.webp" width="400" height="400" decoding="async" fetchpriority="high" alt="Portrait of Hitoshi Matsuyama.">
+      </figure>
+    </section>
+    <!-- ============================== 01 WORK ============================== -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <header class="sec-head" data-reveal>
+        <span class="sec-num mono">01</span>
+        <h2 id="work-title"><span lang="en">Selected work</span><span lang="ja">研究事例</span></h2>
+        <p class="sec-aside" lang="en">Three projects at three scales — a document, a performance, a body. The interfaces below are re-created from the papers. Try them.</p>
+        <p class="sec-aside" lang="ja">文書・演技・身体という3つのスケールの研究。各インタフェースは論文の図を元に再現したもので、実際に操作できます。</p>
+      </header>
+
+      <!-- ---------- Case 1: DocuDebug ---------- -->
+      <article class="case" id="docudebug" aria-labelledby="dd-title">
+        <div class="case-meta" data-reveal>
+          <div class="case-tags">
+            <span class="venue venue-hot">UIST 2026</span>
+            <span class="tag">Human–AI Co-creation</span>
+            <span class="tag">LLM</span>
+            <span class="tag">AI-Assisted Writing</span>
+          </div>
+          <h3 class="case-title" id="dd-title">DocuDebug</h3>
+          <p class="case-kicker">A Graph-Supported Interactive Editor for Verifying and Maintaining Internal Logical Consistency</p>
+
+          <dl class="pa-list">
+            <div>
+              <dt><span lang="en">Problem</span><span lang="ja">課題</span></dt>
+              <dd lang="en">One edit, many breaks. Change a single result and paragraphs pages away stop holding up. Ctrl+F finds words, not dependencies — and asking an AI to update the document rewrites paragraphs that were fine.</dd>
+              <dd lang="ja">一つの修正が、多くの破綻を生む。結果を一つ変えるだけで、離れた段落の論理が崩れる。Ctrl+F は単語しか探せず、依存関係は見つけられない。AIに更新を頼めば、問題のない段落まで書き換えてしまう。</dd>
             </div>
+            <div>
+              <dt><span lang="en">Approach</span><span lang="ja">アプローチ</span></dt>
+              <dd lang="en">Debug text like code. DocuDebug builds a semantic dependency graph of paragraphs and sources — the document’s abstract syntax tree — and runs a logic linter over it: deterministic errors from graph traversal, probabilistic warnings from an LLM. Every diagnostic is a suggestion; the writer decides.</dd>
+              <dd lang="ja">文章をコードのようにデバッグする。段落と出典の意味的な依存グラフ（文書版の抽象構文木）を構築し、ロジックリンターを実行。グラフ探索による決定的なエラーと、LLMによる確率的な警告を区別して示し、最終判断は常に書き手が行う。</dd>
             </div>
-            
-        </section>
-        
-        <section class="section-cities" id="cities">
-            <div class="row">
-                <h2>Publication (International)</h2>
+            <div>
+              <dt><span lang="en">Result</span><span lang="ja">結果</span></dt>
+              <dd lang="en">In a within-subjects study with 12 professional writers against Google Docs with Gemini, edits to paragraphs that needed no change fell from 40.8% to 2.8%. Writers resolved warnings rather than clicking them away.</dd>
+              <dd lang="ja">プロのライター・編集者12名による Google Docs + Gemini との被験者内比較で、修正不要な段落への編集が 40.8% から 2.8% に減少。書き手は警告を安易に消さず、一つずつ解決した。</dd>
             </div>
-            <div class="publication">
-                <ul>
-                    <b>Journal</b>
-                    <li>Hitoshi Matsuyama, Shunsuke Aoki, Takuro Yonezawa, Kei Hiroi, Katsuhiko Kaji, and Nobuo Kawaguchi. Deep Learning for Ballroom Dance Recognition: A Performance Classification Model with Three-dimensional Body Joints and Wearable Sensing. IEEE Sensors Journal, 2021 December. [Accepeted/Early Access Available] </li>
-                    <b>Conference</b>
-                    <li>Hitoshi Matsuyama, Nobuo Kawaguchi, and Brian Y. Lim. IRIS: Interpretable Rubric-Informed Segmentation for Action Quality Assessment. In Proceedings of the 28th Annual Conference on Intelligent User Interface (IUI23). </li>
-                    <li>Hitoshi Matsuyama, Kei Hiroi, Katsuhiko Kaji, Takuro Yonezawa, Nobuo Kawaguchi. A Basic Study on Ballroom Dance Figure Classification with LSTM Using Multi-modal Sensor. Activity and Behavior Computing 2020. pp 209-226. </li>
-                    <li>Hitoshi Matsuyama, Kei Hiroi, Katsuhiko Kaji, Takuro Yonezawa, Nobuo Kawaguchi. Hybrid Activity Recognition for Ballroom Dance Exercise using Video and Wearable Sensor. 2019 Joint 8th International Conference on Informatics, Electronics & Vision (ICIEV) and 2019 3rd International Conference on Imaging, Vision & Pattern Recognition (icIVPR) 2019. pp. 112-117.</li>
-                    <b>Workshop</b>
-                    <li>Hitoshi Matsuyama, Takuto Yoshida, Nozomi Hayashida, Yuto Fukushima, Takuro Yonezawa, Nobuo Kawaguchi. Nurse care activity recognition challenge: a comparative verification of multiple preprocessing approaches. Adjunct Proceedings of the 2020 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2020 ACM International Symposium on Wearable Computers. pp 414-418. </li>
-                    <li>Hitoshi Matsuyama, Kei Hiroi, Katsuhiko Kaji, Takuro Yonezawa, and Nobuo Kawaguchi. 2019. Ballroom dance step type recognition by random forest using video and wearable sensor. In Adjunct Proceedings of the 2019 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2019 ACM International Symposium on Wearable Computers (UbiComp/ISWC '19 Adjunct). pp 774–780.</li>
-                    <li>Hitoshi Matsuyama, Kenta Urano, Kei Hiroi, Katsuhiko Kaji, and Nobuo Kawaguchi. 2018. Short Segment Random Forest with Post Processing Using Label Constraint for SHL Recognition Challenge. In Proceedings of the 2018 ACM International Joint Conference and 2018 International Symposium on Pervasive and Ubiquitous Computing and Wearable Computers (UbiComp '18).</li>
-                </ul>
-                
-                
+          </dl>
+
+          <ul class="metrics">
+            <li><b>40.8%→2.8%</b><span lang="en">unaffected paragraphs edited anyway</span><span lang="ja">修正不要な段落への編集</span></li>
+            <li><b>94%</b><span lang="en">of 84 diagnostics resolved in 30 min</span><span lang="ja">84件の診断のうち30分以内に解決</span></li>
+            <li><b>169 s</b><span lang="en">median review before suppressing a warning</span><span lang="ja">警告を抑制するまでの検討時間（中央値）</span></li>
+            <li><b>n = 12</b><span lang="en">professional writers and editors</span><span lang="ja">プロのライター・編集者</span></li>
+          </ul>
+
+          <div class="case-links">
+            <a class="link-btn link-btn-primary" href="https://sbintuitions.github.io/uist2026-docudebug/" target="_blank" rel="noopener"><span lang="en">Project page</span><span lang="ja">プロジェクトページ</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="link-btn" href="https://doi.org/10.1145/3830398.3830558" target="_blank" rel="noopener"><span lang="en">Paper</span><span lang="ja">論文</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="link-btn" href="https://sbintuitions.github.io/uist2026-docudebug/#video" target="_blank" rel="noopener"><span lang="en">Video</span><span lang="ja">動画</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="link-btn" href="https://sbintuitions.github.io/hci-uist2026-docudebug-presentation/" target="_blank" rel="noopener"><span lang="en">Slides</span><span lang="ja">スライド</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="link-btn" href="https://sbintuitions.github.io/uist2026-docudebug/poster/poster.pdf" target="_blank" rel="noopener"><span lang="en">Poster</span><span lang="ja">ポスター</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="case-demo" data-reveal>
+          <figure class="dd-figure">
+            <a href="https://sbintuitions.github.io/uist2026-docudebug/" target="_blank" rel="noopener">
+              <img src="assets/img/docudebug-teaser.webp" width="1800" height="730" loading="lazy" decoding="async" alt="Editing paragraph 1 to say bulls don't hate red updates the semantic graph: paragraph 1 now contradicts its cited source, and paragraph 3, which argued 'because bulls hate red', loses its premise. The editor shows a red Broken Evidence error on paragraph 1 and a yellow Logic Leap warning on paragraph 3.">
+            </a>
+            <figcaption>
+              <span lang="en"><b>Edit, update the graph, debug the document.</b> Editing paragraph 1 to “Bulls don’t hate red” makes it contradict its own source, and paragraph 3 loses its premise. DocuDebug surfaces both on the text: a red <i>Broken Evidence</i> error and a yellow <i>Logic Leap</i> warning.</span>
+              <span lang="ja"><b>編集 → グラフ更新 → 文書のデバッグ。</b>段落1を「Bulls don’t hate red」に編集すると、段落1は自身の出典と矛盾し、段落3は前提を失う。DocuDebug はこれらを本文上に、赤の <i>Broken Evidence</i>（エラー）と黄の <i>Logic Leap</i>（警告）として示す。</span>
+            </figcaption>
+          </figure>
+          <figure class="dd-video">
+            <video controls preload="none" playsinline poster="assets/img/docudebug-video-poster.webp" src="https://sbintuitions.github.io/uist2026-docudebug/assets/video/docudebug-video-figure.mp4"></video>
+            <figcaption class="mono">Video figure</figcaption>
+          </figure>
+          <p class="demo-note dd-more"><a href="https://sbintuitions.github.io/uist2026-docudebug/" target="_blank" rel="noopener"><span lang="en">Details on the project page</span><span lang="ja">詳細はプロジェクトページへ</span> <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+        </div>
+      </article>
+      <!-- ---------- Case 2: IRIS ---------- -->
+      <article class="case case-flip" id="iris" aria-labelledby="iris-title">
+        <div class="case-meta" data-reveal>
+          <div class="case-tags">
+            <span class="venue">IUI 2023</span>
+            <span class="tag">Explainable AI</span>
+            <span class="tag">Action Quality Assessment</span>
+          </div>
+          <h3 class="case-title" id="iris-title">IRIS</h3>
+          <p class="case-kicker">Interpretable Rubric-Informed Segmentation for Action Quality Assessment</p>
+
+          <dl class="pa-list">
+            <div>
+              <dt><span lang="en">Problem</span><span lang="ja">課題</span></dt>
+              <dd lang="en">AI judges for sports video output a single opaque score — useless to an athlete who needs to know <em>what</em> to fix.</dd>
+              <dd lang="ja">スポーツ映像のAI採点は、根拠のない単一スコアを出すだけ。何を直すべきか知りたい選手には役に立たない。</dd>
             </div>
-            
-            <br>
-            
-            <div class="row">
-                <h2>国内発表</h2>
+            <div>
+              <dt><span lang="en">Approach</span><span lang="ja">アプローチ</span></dt>
+              <dd lang="en">Mirror how human judges work. IRIS segments a figure-skating performance by the rubric, scores each element against its base value, adds program components, and sums them into the final score.</dd>
+              <dd lang="ja">人間の審判と同じ手順をなぞる。フィギュアスケートの演技をルーブリックに沿って要素ごとに分割し、基礎点からの出来栄えを採点、演技構成点を加えて最終スコアを構成する。</dd>
             </div>
-            <div class="publication">
-                <ul>
-                    <b>論文誌</b>
-                    <li>松山仁， 浦野健太， 廣井慧， 梶克彦， 米澤拓郎， 河口信夫. 社交ダンスの動作特性を考慮したマルチモーダルセンサによるダンスフィガー認識. 情報処理学会 論文誌. 2020年 10月. pp 1591-1604. </li>
-                    <b>研究会等</b>
-                    <li>浦野健太，松山仁， 湯木 悠太，野崎 惇登，廣井慧， 梶克彦，河口信夫. ランダムフォレストとルールベース処理を用いた大規模スマートフォンデータに対する行動認識．HCGシンポジウム．</li>
-                    <li>松山仁， 廣井慧， 梶克彦， 米澤拓郎， 河口信夫. マルチモーダル社交ダンス認識における従来手法と深層学習の比較評価. MBL/UBI 研究会. issue 32. pp 1-2. 2020年 2月． </li>
-                </ul>
-                
-                
+            <div>
+              <dt><span lang="en">Result</span><span lang="ja">結果</span></dt>
+              <dd lang="en">Outperformed non-interpretable state-of-the-art models. Practicing skaters agreed with its explanations, found them useful, and trusted the AI’s judgments more.</dd>
+              <dd lang="ja">解釈性のない最先端モデルを上回る精度。現役スケーターは説明に同意し、有用と評価し、AIの判定をより信頼するようになった。</dd>
             </div>
-            
-            <br>
-            
-            
-        </section>
-            
-            
-        
-        
-        <section class="section-plans js--section-plans" id="plans">
-            <div class="row">
-                <h2>Activities</h2>
+          </dl>
+
+          <p class="case-credit">
+            <span lang="en">with Brian Y. Lim (National University of Singapore)</span>
+            <span lang="ja">Brian Y. Lim（シンガポール国立大学）との共同研究</span>
+          </p>
+          <div class="case-links">
+            <a class="link-btn" href="https://doi.org/10.1145/3581641.3584048" target="_blank" rel="noopener">ACM DL<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="link-btn" href="https://arxiv.org/abs/2303.09097" target="_blank" rel="noopener">arXiv<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="case-demo" data-reveal>
+          <div class="window" data-demo="iris">
+            <noscript><p class="noscript">Enable JavaScript to try the interactive sketch.</p></noscript>
+          </div>
+          <p class="demo-note mono"><span lang="en">Re-created from Fig. 3 of the paper. The broadcast video is replaced with an illustration of the skater’s path.</span><span lang="ja">論文の Fig. 3 を再現。放送映像はスケーターの軌跡のイラストに置き換えています。</span></p>
+        </div>
+      </article>
+
+      <!-- ---------- Case 3: Ballroom ---------- -->
+      <article class="case" id="ballroom" aria-labelledby="ball-title">
+        <div class="case-meta" data-reveal>
+          <div class="case-tags">
+            <span class="venue">IEEE Sensors J. 2021</span>
+            <span class="tag">Wearable Sensing</span>
+            <span class="tag">3D Pose Estimation</span>
+          </div>
+          <h3 class="case-title case-title-long" id="ball-title">Deep Learning for Ballroom Dance Recognition</h3>
+          <p class="case-kicker">A Temporal and Trajectory-Aware Classification Model With Three-Dimensional Pose Estimation and Wearable Sensing</p>
+
+          <dl class="pa-list">
+            <div>
+              <dt><span lang="en">Problem</span><span lang="ja">課題</span></dt>
+              <dd lang="en">Existing dance recognition supports things like pose evaluation and foot timing, but detailed analysis and feedback are still missing. That requires understanding a performance at the level of its components — the figures.</dd>
+              <dd lang="ja">既存のダンス認識はポーズ評価や足のタイミング合わせなどに使われてきたが、詳細な分析やフィードバックには至っていない。そのためには、演技を構成要素（フィガー）の単位で理解する必要がある。</dd>
             </div>
-            <div class="publication">
-                <ul>
-                    <li>THERS Interdisciplinary Frontier Next Generation Researcher 2022-</li>
-                    <li>Research intern at the National University of Singapore, January 2021-</li>
-                    <li>Summer Data Science Program (Online), &nbsp;North Carolina State University, &nbsp;July, 2020</li>
-                    <li>DII Collaborative Graduate Program for Accelerating Innovation in Future Electronics, &nbsp;Ministry of Education and Nagoya University, &nbsp;2018 -</li>
-                </ul>
-                
-                
+            <div>
+              <dt><span lang="en">Approach</span><span lang="ja">アプローチ</span></dt>
+              <dd lang="en">Formulate it as dance-figure classification from 3D body joints and wearable sensors, with an LSTM-based model that adds a trajectory-wise structure within each timestep and a temporal masking module.</dd>
+              <dd lang="ja">3次元の身体関節とウェアラブルセンサからのダンスフィガー分類として定式化。LSTM をベースに、各タイムステップ内の軌跡情報を扱う構造と、時間方向のマスキングモジュールを組み込んだモデルを提案。</dd>
             </div>
-        </section>
-        
-        <section class="section-cities" id="cities">
-            <div class="row">
-                <h2>Award/Prize</h2>
+            <div>
+              <dt><span lang="en">Result</span><span lang="ja">結果</span></dt>
+              <dd lang="en">93% accuracy — well above the baseline (84.7%) and very close to experienced dancers (93.6%). The ballroom dance performance dataset is open to researchers.</dd>
+              <dd lang="ja">精度 93% を達成。ベースライン（84.7%）を大きく上回り、経験者ダンサー（93.6%）に迫る結果となった。社交ダンスの演技データセットは研究者向けに公開。</dd>
             </div>
-            <div class="publication">
-                <ul>
-                    <li>Outstanding Researcher (2022), THERS Interdisciplinary Frontier Next Generation Researcher Program  </li>
-                    <li>NEDO Prize, Tongali Business Contest 2020</li>
-                    <li>SMBC Nikko Shoken Prize, Tongali Business Contest 2020</li>
-                    <li>2nd Prize, Campus Venture Grand Prix (CVG), 260 teams, 2020</li>
-                    <li>1st Prize, PwC Analytics Hackathon, 2020</li>
-                </ul>
-                
-                
+          </dl>
+
+          <ul class="metrics">
+            <li><b>93%</b><span lang="en">figure classification accuracy</span><span lang="ja">フィガー分類精度</span></li>
+            <li><b>93.6%</b><span lang="en">experienced dancers</span><span lang="ja">経験者ダンサー</span></li>
+          </ul>
+
+          <p class="case-credit">
+            <span lang="en">Kawaguchi Lab, Nagoya University</span><span lang="ja">名古屋大学 河口研究室</span>
+          </p>
+          <div class="case-links">
+            <a class="link-btn" href="https://doi.org/10.1109/JSEN.2021.3098744" target="_blank" rel="noopener">IEEE Xplore<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="case-demo" data-reveal>
+          <div class="window window-dark">
+            <div class="win-bar">
+              <span class="win-title mono">fusion_viewer — pose × IMU</span>
+              <span class="pill pill-live mono" aria-hidden="true">LIVE · SIM</span>
             </div>
-        </section>
-        
-        <section class="section-plans js--section-plans" id="plans">
-            <div class="row">
-                <h2>Skills</h2>
+            <div class="fusion">
+              <canvas class="dancer-canvas" data-dancer="fusion" aria-hidden="true"></canvas>
+              <div class="fusion-pred" aria-hidden="true">
+                <span class="mono fusion-cap"><span lang="en">Figure</span><span lang="ja">フィガー</span></span>
+                <b data-fusion-figure>—</b>
+                <span class="mono" data-fusion-conf></span>
+              </div>
+              <button class="hud-btn fusion-toggle" type="button" data-dancer-toggle="fusion" aria-pressed="false">
+                <svg class="ico ico-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+                <svg class="ico ico-play" aria-hidden="true"><use href="#i-play"/></svg>
+                <span class="sr-only"><span lang="en">Pause animation</span><span lang="ja">アニメーションを一時停止</span></span>
+              </button>
             </div>
-            <div class="publication">
-                <ul>
-                    <li>Language: English (TOEIC 930, IELTS Academic 6.5), 日本語 </li>
-                    <li>Programming skill: Python, C</li>
-                    <li>Research interest: HCI, Ubicomp, XAI, Machine learning</li>
-                </ul>
-                
-                
+          </div>
+          <p class="demo-note mono"><span lang="en">Simulated skeleton with accelerometer traces derived from its own joints.</span><span lang="ja">シミュレーションした骨格と、その関節から算出した加速度波形。</span></p>
+
+          <div class="media-grid">
+            <div class="media yt" data-yt="rR3oF2ZFfDM">
+              <button type="button" class="yt-btn" data-i18n-attr="aria-label" data-en-aria-label="Play video: Ballroom dance recognition and support system (Japanese)" data-ja-aria-label="動画を再生：マルチモーダルセンサを用いたAI解析による社交ダンス認識・サポートシステム" aria-label="Play video: Ballroom dance recognition and support system (Japanese)">
+                <img src="https://i.ytimg.com/vi/rR3oF2ZFfDM/hqdefault.jpg" width="480" height="360" loading="lazy" decoding="async" alt="">
+                <span class="yt-play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span>
+                <span class="yt-title" lang="ja-JP">社交ダンス認識・サポートシステム <span class="mono">2020</span></span>
+              </button>
             </div>
-        
-        </section>
-        
-        <section class="section-cities" id="cities">
-            <div class="row">
-                <h2>Education</h2>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============================== 03 PUBLICATIONS ============================== -->
+    <section class="section" id="publications" aria-labelledby="pubs-title">
+      <header class="sec-head" data-reveal>
+        <span class="sec-num mono">02</span>
+        <h2 id="pubs-title"><span lang="en">Publications</span><span lang="ja">業績</span></h2>
+        <p class="sec-aside" lang="en">Peer-reviewed papers in HCI, ubiquitous computing, and sensing, plus domestic publications in Japanese.</p>
+        <p class="sec-aside" lang="ja">HCI・ユビキタスコンピューティング・センシング分野の査読付き論文と、国内発表。</p>
+      </header>
+
+      <div class="pub-toolbar" data-reveal>
+        <div class="filter-chips" role="group" aria-label="Filter by type">
+          <button type="button" class="fchip" data-filter="all" aria-pressed="true"><span lang="en">All</span><span lang="ja">すべて</span><span class="fcount" data-fcount="all"></span></button>
+          <button type="button" class="fchip" data-filter="conference" aria-pressed="false"><span lang="en">Conference</span><span lang="ja">国際会議</span><span class="fcount" data-fcount="conference"></span></button>
+          <button type="button" class="fchip" data-filter="journal" aria-pressed="false"><span lang="en">Journal</span><span lang="ja">論文誌</span><span class="fcount" data-fcount="journal"></span></button>
+          <button type="button" class="fchip" data-filter="workshop" aria-pressed="false"><span lang="en">Workshop</span><span lang="ja">ワークショップ</span><span class="fcount" data-fcount="workshop"></span></button>
+          <button type="button" class="fchip" data-filter="domestic" aria-pressed="false"><span lang="en">Domestic (JP)</span><span lang="ja">国内発表</span><span class="fcount" data-fcount="domestic"></span></button>
+        </div>
+      </div>
+      <p class="pub-status mono" role="status" aria-live="polite" data-pub-status></p>
+
+      <ol class="pubs" data-pubs>
+        <li class="pub is-featured" data-type="conference" data-year="2026">
+          <span class="pub-year mono">2026</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://sbintuitions.github.io/uist2026-docudebug/" target="_blank" rel="noopener">DocuDebug: A Graph-Supported Interactive Editor for Verifying and Maintaining Internal Logical Consistency</a></h3>
+            <p class="pub-authors"><b>Hitoshi Matsuyama</b>, Keita Higuchi</p>
+            <p class="pub-venue"><i>Proceedings of the 39th Annual ACM Symposium on User Interface Software and Technology (UIST ’26)</i> <span class="pub-flag"><span lang="en">to appear</span><span lang="ja">採録・発表予定</span></span></p>
+          </div>
+          <div class="pub-side">
+            <span class="venue venue-hot">UIST ’26</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://sbintuitions.github.io/uist2026-docudebug/" target="_blank" rel="noopener">Project</a>
+              <a class="mini-btn" href="https://doi.org/10.1145/3830398.3830558" target="_blank" rel="noopener">DOI</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
             </div>
-            <div class="education">
-                <ul>
-                
-                <li>Doctor (Information and Communication Engineering), &nbsp;Nagoya University, &nbsp;2020 - 2022</li>
-                <li>Master (Information and Communication Engineering), &nbsp;Nagoya University, &nbsp;2018 - 2020</li>
-                <li>Bachelor (Information Engineering), &nbsp;Nagoya University (Aichi, Japan), &nbsp;2014 - 2018</li>
-                </ul>
+          </div>
+        </li>
+
+        <li class="pub is-featured" data-type="conference" data-year="2023">
+          <span class="pub-year mono">2023</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://doi.org/10.1145/3581641.3584048" target="_blank" rel="noopener">IRIS: Interpretable Rubric-Informed Segmentation for Action Quality Assessment</a></h3>
+            <p class="pub-authors"><b>Hitoshi Matsuyama</b>, Nobuo Kawaguchi, Brian Y. Lim</p>
+            <p class="pub-venue"><i>Proceedings of the 28th International Conference on Intelligent User Interfaces (IUI ’23)</i>, pp. 368–378</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue">IUI ’23</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://doi.org/10.1145/3581641.3584048" target="_blank" rel="noopener">DOI</a>
+              <a class="mini-btn" href="https://arxiv.org/abs/2303.09097" target="_blank" rel="noopener">arXiv</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
             </div>
-        </section>
-        
-        <section class="section-plans js--section-plans" id="plans">
-            <div class="row">
-                <h2>Contact</h2>
+          </div>
+        </li>
+
+        <li class="pub" data-type="conference" data-year="2022">
+          <span class="pub-year mono">2022</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://doi.org/10.1007/978-3-031-05463-1_21" target="_blank" rel="noopener">Smartphone Localization with Solar-Powered BLE Beacons in Warehouse</a></h3>
+            <p class="pub-authors">Kazuma Kano, Takuto Yoshida, Nozomi Hayashida, Yusuke Asai, <b>Hitoshi Matsuyama</b>, Shin Katayama, Kenta Urano, Takuro Yonezawa, Nobuo Kawaguchi</p>
+            <p class="pub-venue"><i>HCI International 2022</i>, LNCS, pp. 291–310</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue">HCII ’22</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://doi.org/10.1007/978-3-031-05463-1_21" target="_blank" rel="noopener">DOI</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
             </div>
-            <div class="author-box">
-            <img src="resources/img/self_circle2.png" alt=MyPic width=200>
-            <p class="author-text">Hitoshi Matsuyama</p>
-            <p class="author-email">email: hitoshi[_at_]ucl.nuee.nagoya-u.ac.jp &nbsp;OR &nbsp;matsuyhit[_at_]gmail.com</p>
+          </div>
+        </li>
+
+        <li class="pub is-featured" data-type="journal" data-year="2021">
+          <span class="pub-year mono">2021</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://doi.org/10.1109/JSEN.2021.3098744" target="_blank" rel="noopener">Deep Learning for Ballroom Dance Recognition: A Temporal and Trajectory-Aware Classification Model With Three-Dimensional Pose Estimation and Wearable Sensing</a></h3>
+            <p class="pub-authors"><b>Hitoshi Matsuyama</b>, Shunsuke Aoki, Takuro Yonezawa, Kei Hiroi, Katsuhiko Kaji, Nobuo Kawaguchi</p>
+            <p class="pub-venue"><i>IEEE Sensors Journal</i>, 21(22), pp. 25437–25448</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue">IEEE Sens. J.</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://doi.org/10.1109/JSEN.2021.3098744" target="_blank" rel="noopener">DOI</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
             </div>
-        </section>
-                
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/script.js"></script>
-    
-    </body>  
-    
+          </div>
+        </li>
+
+        <li class="pub" data-type="conference" data-year="2021">
+          <span class="pub-year mono">2021</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://doi.org/10.1007/978-3-030-77015-0_22" target="_blank" rel="noopener">A Gaze-Based Unobstructive Information Selection by Context-Aware Moving UI in Mixed Reality</a></h3>
+            <p class="pub-authors">Nozomi Hayashida, <b>Hitoshi Matsuyama</b>, Shunsuke Aoki, Takuro Yonezawa, Nobuo Kawaguchi</p>
+            <p class="pub-venue"><i>HCI International 2021</i>, LNCS, pp. 301–315</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue">HCII ’21</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://doi.org/10.1007/978-3-030-77015-0_22" target="_blank" rel="noopener">DOI</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub" data-type="conference" data-year="2020">
+          <span class="pub-year mono">2020</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://doi.org/10.1007/978-981-15-8944-7_13" target="_blank" rel="noopener">A Basic Study on Ballroom Dance Figure Classification with LSTM Using Multi-modal Sensor</a></h3>
+            <p class="pub-authors"><b>Hitoshi Matsuyama</b>, Kei Hiroi, Katsuhiko Kaji, Takuro Yonezawa, Nobuo Kawaguchi</p>
+            <p class="pub-venue"><i>Activity and Behavior Computing (ABC 2020)</i>, Smart Innovation, Systems and Technologies, pp. 209–226</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue">ABC ’20</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://doi.org/10.1007/978-981-15-8944-7_13" target="_blank" rel="noopener">DOI</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub" data-type="workshop" data-year="2020">
+          <span class="pub-year mono">2020</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://doi.org/10.1145/3410530.3414333" target="_blank" rel="noopener">Nurse Care Activity Recognition Challenge: A Comparative Verification of Multiple Preprocessing Approaches</a></h3>
+            <p class="pub-authors"><b>Hitoshi Matsuyama</b>, Takuto Yoshida, Nozomi Hayashida, Yuto Fukushima, Takuro Yonezawa, Nobuo Kawaguchi</p>
+            <p class="pub-venue"><i>Adjunct Proceedings of UbiComp/ISWC ’20</i>, pp. 414–418</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue">UbiComp ’20</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://doi.org/10.1145/3410530.3414333" target="_blank" rel="noopener">DOI</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub" data-type="journal domestic" data-year="2020">
+          <span class="pub-year mono">2020</span>
+          <div class="pub-body" lang="ja-JP">
+            <h3 class="pub-title">社交ダンスの動作特性を考慮したマルチモーダルセンサによるダンスフィガー認識</h3>
+            <p class="pub-authors"><b>松山 仁</b>, 浦野 健太, 廣井 慧, 梶 克彦, 米澤 拓郎, 河口 信夫</p>
+            <p class="pub-venue"><i>情報処理学会論文誌</i>, 61(10), pp. 1591–1604</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue venue-jp">IPSJ <span lang="en">Journal</span><span lang="ja">論文誌</span></span>
+            <div class="pub-actions">
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub" data-type="domestic" data-year="2020">
+          <span class="pub-year mono">2020</span>
+          <div class="pub-body" lang="ja-JP">
+            <h3 class="pub-title">マルチモーダル社交ダンス認識における従来手法と深層学習の比較評価</h3>
+            <p class="pub-authors"><b>松山 仁</b>, 廣井 慧, 梶 克彦, 米澤 拓郎, 河口 信夫</p>
+            <p class="pub-venue"><i>情報処理学会 研究報告 ユビキタスコンピューティングシステム（UBI）</i>, No. 32, pp. 1–2</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue venue-jp">IPSJ UBI</span>
+            <div class="pub-actions">
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub" data-type="workshop" data-year="2019">
+          <span class="pub-year mono">2019</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://doi.org/10.1145/3341162.3344852" target="_blank" rel="noopener">Ballroom Dance Step Type Recognition by Random Forest Using Video and Wearable Sensor</a></h3>
+            <p class="pub-authors"><b>Hitoshi Matsuyama</b>, Kei Hiroi, Katsuhiko Kaji, Takuro Yonezawa, Nobuo Kawaguchi</p>
+            <p class="pub-venue"><i>Adjunct Proceedings of UbiComp/ISWC ’19</i>, pp. 774–780</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue">UbiComp ’19</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://doi.org/10.1145/3341162.3344852" target="_blank" rel="noopener">DOI</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub" data-type="conference" data-year="2019">
+          <span class="pub-year mono">2019</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://doi.org/10.1109/ICIEV.2019.8858524" target="_blank" rel="noopener">Hybrid Activity Recognition for Ballroom Dance Exercise using Video and Wearable Sensor</a></h3>
+            <p class="pub-authors"><b>Hitoshi Matsuyama</b>, Kei Hiroi, Katsuhiko Kaji, Takuro Yonezawa, Nobuo Kawaguchi</p>
+            <p class="pub-venue"><i>Joint 8th ICIEV and 3rd icIVPR 2019</i>, pp. 112–117</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue">ICIEV ’19</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://doi.org/10.1109/ICIEV.2019.8858524" target="_blank" rel="noopener">DOI</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub" data-type="workshop" data-year="2018">
+          <span class="pub-year mono">2018</span>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://doi.org/10.1145/3267305.3267532" target="_blank" rel="noopener">Short Segment Random Forest with Post Processing Using Label Constraint for SHL Recognition Challenge</a></h3>
+            <p class="pub-authors"><b>Hitoshi Matsuyama</b>, Kenta Urano, Kei Hiroi, Katsuhiko Kaji, Nobuo Kawaguchi</p>
+            <p class="pub-venue"><i>Adjunct Proceedings of UbiComp ’18</i>, pp. 1636–1642</p>
+          </div>
+          <div class="pub-side">
+            <span class="venue">UbiComp ’18</span>
+            <div class="pub-actions">
+              <a class="mini-btn" href="https://doi.org/10.1145/3267305.3267532" target="_blank" rel="noopener">DOI</a>
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub" data-type="domestic" data-year="">
+          <span class="pub-year mono">—</span>
+          <div class="pub-body" lang="ja-JP">
+            <h3 class="pub-title">ランダムフォレストとルールベース処理を用いた大規模スマートフォンデータに対する行動認識</h3>
+            <p class="pub-authors">浦野 健太, <b>松山 仁</b>, 湯木 悠太, 野崎 惇登, 廣井 慧, 梶 克彦, 河口 信夫</p>
+            <p class="pub-venue"><i>HCGシンポジウム</i></p>
+          </div>
+          <div class="pub-side">
+            <span class="venue venue-jp">HCG</span>
+            <div class="pub-actions">
+              <button type="button" class="mini-btn" data-copy-cite><svg class="ico" aria-hidden="true"><use href="#i-copy"/></svg><span lang="en">Cite</span><span lang="ja">引用</span></button>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============================== 04 CV ============================== -->
+    <section class="section" id="cv" aria-labelledby="cv-title">
+      <header class="sec-head" data-reveal>
+        <span class="sec-num mono">03</span>
+        <h2 id="cv-title"><span lang="en">Curriculum vitae</span><span lang="ja">経歴</span></h2>
+        <p class="sec-aside" lang="en">Industry research and data science, an engineering doctorate, and a habit of entering (and winning) hackathons.</p>
+        <p class="sec-aside" lang="ja">企業での研究とデータサイエンス、工学博士、そしてハッカソンやビジネスコンテストへの挑戦。</p>
+      </header>
+
+      <div class="cv-grid">
+        <div class="cv-col" data-reveal>
+          <h3 class="cv-h mono"><span lang="en">Experience</span><span lang="ja">職歴</span></h3>
+          <ol class="timeline">
+            <li class="is-current">
+              <span class="tl-when mono"><span lang="en">Present</span><span lang="ja">現在</span></span>
+              <div>
+                <h4>SB Intuitions Corp.</h4>
+                <p lang="en">Human–Computer Interaction research, focusing on LLM-assisted writing.</p>
+                <p lang="ja">LLMによる執筆支援を中心とした、Human–Computer Interaction の研究。</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-when mono"><span lang="en">Previously</span><span lang="ja">前職</span></span>
+              <div>
+                <h4><span lang="en">Recruit Co., Ltd.</span><span lang="ja">株式会社リクルート</span></h4>
+                <p lang="en">Data scientist developing recommender systems — data analysis, model development, pipelines, KPIs, and online evaluation.</p>
+                <p lang="ja">データサイエンティストとして推薦システムの開発に携わり、データ分析、モデル開発、パイプライン構築、KPI、オンライン評価などに従事。</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-when mono">2021 →</span>
+              <div>
+                <h4><span lang="en">National University of Singapore</span><span lang="ja">シンガポール国立大学</span></h4>
+                <p lang="en">Research intern with Brian Y. Lim — explainable AI for action quality assessment.</p>
+                <p lang="ja">研究インターン（Brian Y. Lim 研究室）— Action Quality Assessment のための説明可能AI。</p>
+              </div>
+            </li>
+          </ol>
+
+          <h3 class="cv-h mono"><span lang="en">Education</span><span lang="ja">学歴</span></h3>
+          <ol class="timeline">
+            <li>
+              <span class="tl-when mono">2020–2022</span>
+              <div>
+                <h4><span lang="en">Ph.D. in Engineering</span><span lang="ja">博士（工学）</span></h4>
+                <p lang="en">Information and Communication Engineering, Nagoya University. Conferred Sept. 2022.</p>
+                <p lang="ja">名古屋大学 大学院工学研究科 情報・通信工学専攻。2022年9月 学位取得。</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-when mono">2018–2020</span>
+              <div>
+                <h4><span lang="en">M.Eng.</span><span lang="ja">修士（工学）</span></h4>
+                <p lang="en">Information and Communication Engineering, Nagoya University.</p>
+                <p lang="ja">名古屋大学 大学院工学研究科 情報・通信工学専攻。</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-when mono">2014–2018</span>
+              <div>
+                <h4><span lang="en">B.Eng.</span><span lang="ja">学士（工学）</span></h4>
+                <p lang="en">Information Engineering, Nagoya University.</p>
+                <p lang="ja">名古屋大学 工学部 情報工学。</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="cv-col" data-reveal>
+          <h3 class="cv-h mono"><span lang="en">Awards</span><span lang="ja">受賞</span></h3>
+          <ul class="award-list">
+            <li>
+              <span class="award-year mono">2022</span>
+              <span lang="en"><b>Outstanding Researcher</b> — THERS Interdisciplinary Frontier Next Generation Researcher Program</span>
+              <span lang="ja"><b>優秀研究者</b> — THERS 学際フロンティア次世代研究者プログラム</span>
+            </li>
+            <li>
+              <span class="award-year mono">2020</span>
+              <span lang="en"><b>1st Prize</b> — PwC Analytics Hackathon</span>
+              <span lang="ja"><b>優勝</b> — PwC Analytics Hackathon</span>
+            </li>
+            <li>
+              <span class="award-year mono">2020</span>
+              <span lang="en"><b>2nd Prize</b> — Campus Venture Grand Prix (CVG), out of 260 teams</span>
+              <span lang="ja"><b>2位</b> — キャンパスベンチャーグランプリ（CVG）、260チーム中</span>
+            </li>
+            <li>
+              <span class="award-year mono">2020</span>
+              <span lang="en"><b>NEDO Prize</b> — Tongali Business Contest</span>
+              <span lang="ja"><b>NEDO賞</b> — Tongali ビジネスプランコンテスト</span>
+            </li>
+            <li>
+              <span class="award-year mono">2020</span>
+              <span lang="en"><b>SMBC Nikko Securities Prize</b> — Tongali Business Contest</span>
+              <span lang="ja"><b>SMBC日興証券賞</b> — Tongali ビジネスプランコンテスト</span>
+            </li>
+          </ul>
+
+          <h3 class="cv-h mono"><span lang="en">Programs</span><span lang="ja">プログラム・活動</span></h3>
+          <ul class="award-list">
+            <li><span class="award-year mono">2022</span><span lang="en">THERS Interdisciplinary Frontier Next Generation Researcher</span><span lang="ja">THERS 学際フロンティア次世代研究者</span></li>
+            <li><span class="award-year mono">2021</span><span lang="en">Research internship, National University of Singapore</span><span lang="ja">シンガポール国立大学 研究インターンシップ</span></li>
+            <li><span class="award-year mono">2020</span><span lang="en">Summer Data Science Program (online), North Carolina State University</span><span lang="ja">ノースカロライナ州立大学 Summer Data Science Program（オンライン）</span></li>
+            <li><span class="award-year mono">2018</span><span lang="en">DII Collaborative Graduate Program for Accelerating Innovation in Future Electronics, MEXT & Nagoya University</span><span lang="ja">未来エレクトロニクス創成加速 DII 協働大学院プログラム（文部科学省・名古屋大学）</span></li>
+          </ul>
+
+          <h3 class="cv-h mono"><span lang="en">Skills</span><span lang="ja">スキル</span></h3>
+          <dl class="skills">
+            <div><dt><span lang="en">Languages</span><span lang="ja">言語</span></dt><dd><span lang="en">Japanese (native) · English — TOEIC 930, IELTS Academic 6.5</span><span lang="ja">日本語（母語）· 英語 — TOEIC 930、IELTS Academic 6.5</span></dd></div>
+            <div><dt><span lang="en">Programming</span><span lang="ja">プログラミング</span></dt><dd>Python · C</dd></div>
+            <div><dt><span lang="en">Methods</span><span lang="ja">手法</span></dt><dd><span lang="en">Interactive system prototyping · controlled user studies · deep learning for pose & sensor data · explainable AI</span><span lang="ja">インタラクティブシステムのプロトタイピング · ユーザ実験 · 姿勢・センサデータの深層学習 · 説明可能AI</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 04 CONTACT ============================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <header class="sec-head" data-reveal>
+        <span class="sec-num mono">04</span>
+        <h2 id="contact-title"><span lang="en">Contact</span><span lang="ja">連絡先</span></h2>
+      </header>
+      <div class="contact-actions" data-reveal>
+        <button type="button" class="btn btn-primary btn-lg" data-email data-e="cGoub2Muc25vaXRpdXRuaWJzQGFtYXl1c3RhbS5paHNvdGlo">
+          <svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>
+          <span lang="en">Copy email address</span><span lang="ja">メールアドレスをコピー</span>
+        </button>
+        <a class="btn btn-lg" href="https://scholar.google.com/citations?user=SUEZeiUAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-scholar"/></svg>Google Scholar</a>
+        <a class="btn btn-lg" href="https://jp.linkedin.com/in/%E4%BB%81-%E6%9D%BE%E5%B1%B1-776982199/en" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span data-current-year>2026</span> Hitoshi Matsuyama</span>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
 </html>
